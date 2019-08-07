@@ -22,13 +22,6 @@ dependencies {
 	}
 ```
 
-and then apply it in your module:
-
-```groovy
-apply plugin: 'com.android.library'
-apply plugin: 'com.jakewharton.butterknife'
-```
-
 Now make sure your activity extends the  `NetworkManagerActivity` instead of `AppCompactivity`.
 
 ```java
