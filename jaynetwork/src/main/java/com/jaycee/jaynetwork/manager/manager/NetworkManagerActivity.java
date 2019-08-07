@@ -14,6 +14,7 @@ public class NetworkManagerActivity extends AppCompatActivity implements Network
 
     private NetworkChangeMonitor networkChangeMonitor;
     private IntentFilter intent;
+    private int registerState;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -24,12 +25,15 @@ public class NetworkManagerActivity extends AppCompatActivity implements Network
 
     // start observing for network
     protected void observeNetwork() {
+        registerState = 1;
         registerReceiver(networkChangeMonitor, intent);
     }
 
     // observing for network
     protected void unObserveNetwork() {
-        unregisterReceiver(networkChangeMonitor);
+        if (registerState == 1) {
+            unregisterReceiver(networkChangeMonitor);
+        }
     }
 
     @Override
