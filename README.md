@@ -1,9 +1,6 @@
 # JayNetwork
 A network library that handles network changes
 
-JayNetwork
-============
-
 Library projects
 --------------------
 
