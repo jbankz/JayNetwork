@@ -18,7 +18,7 @@ Add the dependency
 
 ```groovy
 dependencies {
-	        implementation 'com.github.jbankz:JayNetwork:v1.0'
+	        implementation 'com.github.jbankz:JayNetwork:v1.0.0'
 	}
 ```
 
