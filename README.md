@@ -62,13 +62,13 @@ Override this method to know the type of network that is been conncted to
     }
 ```
 
-Override this method to start observing for network change
+Call this method to start observing for network change
 
 ```groovy
      observeNetwork();
 ```
 
-Override this method to stop observing for network change
+Call this method to stop observing for network change
 
 ```groovy
      unObserveNetwork();
