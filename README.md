@@ -18,7 +18,7 @@ Add the dependency
 
 ```groovy
 dependencies {
-	        implementation 'com.github.jbankz:JayNetwork:v1.0.0'
+	        implementation 'com.github.jbankz:JayNetwork:v1.0.1'
 	}
 ```
 
@@ -72,6 +72,10 @@ Call this method to stop observing for network change
 
 ```groovy
      unObserveNetwork();
+```
+
+```groovy
+     Now also available for use in kotlin
 ```
 
 
